@@ -29,7 +29,26 @@ Input/Output
 
 """
 def isLucky(n):
-    for i in range(len(n)):
-        return i
+    res = [int(x) for x in str(n)]
+
+    if len(res) % 2 > 0:
+            return False
+
+    sum1 = 0
+    sum2 = 0
+    for i in range(len(res)):
+        if (i < (len(res)//2)):
+            sum1 += res[i]
+            print(sum1)
+        else:
+            sum2 += res[i]
+            print(sum2)
+
+    if sum1 == sum2:
+        return True
+
+    return False
 
 
+n = 1230
+print(isLucky(n))
