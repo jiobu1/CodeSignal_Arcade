@@ -48,7 +48,6 @@ def addBorder(picture):
 
     for i in range(0, rows):
         output.append("*"+picture[i]+"*")
-
     output.append(border)
 
     return output
