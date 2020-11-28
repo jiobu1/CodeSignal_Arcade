@@ -27,11 +27,15 @@ Input/Output
 
 """
 
+# def checkPalindrome(inputString):
+#     if list(inputString) == list(reversed(inputString)):
+#         return True
+#     else:
+#         return False
+
 def checkPalindrome(inputString):
-    if list(inputString) == list(reversed(inputString)):
-        return True
-    else:
-        return False
+    return inputString == inputString[::-1]
 
 inputString = "aabaa"
 print(checkPalindrome(inputString))
+

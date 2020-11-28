@@ -33,3 +33,6 @@ def shapeArea(n):
         area += i * 4
 
     return area
+
+def shapeArea(n):
+    return n**2 + (n-1)**2

@@ -30,3 +30,6 @@ def adjacentElementsProduct(inputArray):
     products =  [i * j for i, j in zip(inputArray, inputArray[1:])]
     products.sort()
     return products[-1]
+
+def adjacentElementsProduct(inputArray):
+    return max([inputArray[i] * inputArray[i+1] for i in range(len(inputArray)-1)])

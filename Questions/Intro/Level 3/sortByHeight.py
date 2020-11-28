@@ -36,6 +36,14 @@ def sortByHeight(a):
             j += 1
     return a
 
+def sortByHeight(a):
+
+    l = sorted([i for i in a if i > 0])
+    for n,i in enumerate(a):
+        if i == -1:
+            l.insert(n,i)
+    return l
+
 
 a = [-1, 150, 190, 170, -1, -1, 160, 180]
 print(sortByHeight(a))

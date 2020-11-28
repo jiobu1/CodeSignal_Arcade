@@ -48,5 +48,8 @@ def makeArrayConsecutive2(statues):
 
     return len(list1)
 
+def makeArrayConsecutive2(statues):
+    return max(statues) - min(statues) - len(statues) + 1
+
 statues = [6, 2, 3, 8]
 print(makeArrayConsecutive2(statues))

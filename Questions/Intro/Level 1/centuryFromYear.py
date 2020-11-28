@@ -35,3 +35,6 @@ def century(year):
         century = year // 100
 
     return century
+
+def century(year):
+    return (year + 99) // 100
