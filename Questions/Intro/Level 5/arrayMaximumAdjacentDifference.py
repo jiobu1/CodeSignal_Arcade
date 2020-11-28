@@ -24,7 +24,7 @@ Input/Output
 def arrayMaximalAdjacentDifference(inputArray):
     largest = []
     for i in range(len(inputArray)-1):
-        difference = |inputArray[i] - inputArray[i+1]|
+        difference = abs(inputArray[i] - inputArray[i+1])
         largest.append(difference)
 
     largest.sort()
